@@ -10,7 +10,7 @@ Project1：implement birthday attack on SM2
 - 运行指导：
 	- 直接用 VS 新建项目，将库中文件添加到其中即可运行；
 - 运行截图：
-[	- ![[Pasted image 20220728173102.png]]](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/1.png)
+- ![图片1](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/1.png)
 
 Project2：implement Rho method attack on SM2
 - 项目代码说明：
