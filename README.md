@@ -133,7 +133,7 @@ typedef struct {
 
 3.项目完成情况清单
 
-sm3部分：
+- sm3部分：
 Project1：实现1精简sm3的naive生日攻击
 - 已完成
 
@@ -153,7 +153,7 @@ Project6：尝试实施该方案
 - 代码无法运行
 
 
-sm2部分：
+- sm2部分：
 Project1：Deduce ECDSA PK with ethereum
 - 已完成
 
@@ -173,17 +173,17 @@ Project6：实现真实网络通信的sm2 2P解密
 - 没有编程思路，未完成
 
 
-bitcoin部分：
+- bitcoin部分：
 Project1：伪造中本聪签名
 - 已完成
 
 
-Eth部分：
+- Eth部分：
 Project1：MPT研究报告
 - 已完成
 
 
-Real World Cryptanalyses部分：
+- Real World Cryptanalyses部分：
 Project1：Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
 - 已完成
 
