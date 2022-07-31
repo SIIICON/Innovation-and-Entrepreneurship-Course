@@ -4,7 +4,7 @@
 
 2.项目简介
 - SM3部分：
-- Project1：implement birthday attack on SM2
+- Project1：implement birthday attack on SM3
 - 项目代码说明：
 	- openssl 中实现了 SM3，但考虑到 openssl 整体体量较大，且需要通过统一接口进行调用，无法直接调用 SM3 模块，这里将 SM3 的模块从 openssl 中抽离出来，作为可用的单独模块进行调用；
 	- 通过 unordered map 来存储 message，hashvalue(key) 数对
@@ -16,7 +16,7 @@
 - 运行截图：
 - ![图片1](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/1.png)
 
-- Project2：implement Rho method attack on SM2
+- Project2：implement Rho method attack on SM3
 - 项目代码说明：
 	- 同 Project1一致：openssl 中实现了 SM3，但考虑到 openssl 整体体量较大，且需要通过统一接口进行调用，无法直接调用 SM3 模块，这里将 SM3 的模块从 openssl 中抽离出来，作为可用的单独模块进行调用；
 	- 使用了以下结构体来装载一个摘要实例；
@@ -82,7 +82,7 @@ typedef struct {
 - 运行截图：
 - ![图片5](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/5.jpg)
 
-- Project3：用概念验证代码验证上述缺陷
+- Project3：用概念验证代码验证 pitfalls
 - 不理解题意，未完成。
 
 - Project4：实施上述ECMH计划
@@ -94,6 +94,8 @@ typedef struct {
 
 - Project6：实现真实网络通信的sm2 2P解密
 - 没有编程思路，未完成。
+- 一种可行的办法是基于openssl构建sm2证书签发体系，然后再构建起2P通信体系，但由于对real network 编程不熟悉，所以未尝完成该部分的设计；在SM2 real network文件夹提供了自签发的SM2证书；
+
 
 
 - Bitcoin部分：
