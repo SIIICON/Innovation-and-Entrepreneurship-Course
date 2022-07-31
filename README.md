@@ -3,8 +3,8 @@
 1.小组成员：唐静茹
 
 2.项目简介
-SM3部分：
-Project1：implement birthday attack on SM2
+- SM3部分：
+- Project1：implement birthday attack on SM2
 - 项目代码说明：
 	- openssl 中实现了 SM3，但考虑到 openssl 整体体量较大，且需要通过统一接口进行调用，无法直接调用 SM3 模块，这里将 SM3 的模块从 openssl 中抽离出来，作为可用的单独模块进行调用；
 	- 通过 unordered map 来存储 message，hashvalue(key) 数对
