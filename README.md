@@ -1,5 +1,8 @@
 # Innovation-and-Entrepreneurship-Course
 
+1.小组成员：唐静茹
+
+2.项目简介
 SM3部分：
 Project1：implement birthday attack on SM2
 - 项目代码说明：
@@ -48,11 +51,14 @@ Project3：implement Length_Extension_Attack on SM2
 - 运行截图：
 - ![图片3](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/3.png)
 
-Project4：按照RFC6962实现默克尔树
+Project4：尽最大努力优化SM3实现（软件）
+- 优化后的代码无法运行。
+
+Project5：按照RFC6962实现默克尔树
 - 代码无法运行出结果，未完成。
 
-Project5：
-
+Project6：尝试实施该方案
+- 代码无法运行，未完成。
 
 
 SM2部分：
@@ -78,12 +84,16 @@ Project:2：implement SM2
 
 Project3：用概念验证代码验证上述缺陷
 - 不理解题意，未完成。
+
 Project4：实施上述ECMH计划
-- 跑不出结果，未完成。
+- 运行不出结果，未完成。
+
 Project5：使用SM2实现PGP方案
-- 跑不出结果，未完成。
-Project6：实现真是网络通信的sm2 2P解密
-- 不会，未完成。
+- 运行不出结果，未完成。
+
+
+Project6：实现真实网络通信的sm2 2P解密
+- 没有编程思路，未完成。
 
 
 Bitcoin部分：
@@ -97,7 +107,6 @@ Project1：伪造中本聪签名
 		4.算u_1= zs_(—1) mod n和u2= rs_(-1) mod n.
 		5.计算曲线点(x_1, y_1) =u_1 × G + u_2 × Q_A.如果(x_1, y_1) = O,则签名无效。
 		6.在以下情况下，签名有效:r1=x_1(mod n)，否则无效。
-
 - 运行指导：
 	-若验签的时候不用提供m，只需提供消息的hash，则理论上可以伪造任何签名。以此为思路，先从二进制文件中获取签名并将其添加到另一个二进制文件中。同时保存签名到磁盘备用，再使用翻录签名，验证签名。
 - 运行截图：
@@ -122,6 +131,65 @@ Project2：Find a 64-byte message under some 𝒌 fulfilling that their hash val
 - 未完成。
 
 
+3.项目完成情况清单
+
+
+sm3部分：
+Project1：实现1精简sm3的naive生日攻击
+- 已完成
+
+Project2：实现简化sm3的rho方法
+- 已完成
+
+Project3：针对sm3、sha256等实现长度扩展攻击
+- 已完成
+
+Project4：尽最大努力优化SM3实现（软件）
+- 优化后的代码无法运行
+
+Project5：按照RFC6962实现默克尔树
+- 代码无法运行出结果
+
+Project6：尝试实施该方案
+- 代码无法运行
+
+
+sm2部分：
+Project1：Deduce ECDSA PK with ethereum
+- 已完成
+
+Project2：实现sm2和RFC6879
+- 已完成
+
+Project3：用概念验证代码验证上述缺陷
+- 不理解题意，未完成
+
+Project4：实施上述ECMH计划
+- 运行不出结果
+
+Project5：使用SM2实现PGP方案
+- 运行不出结果
+
+Project6：实现真实网络通信的sm2 2P解密
+- 没有编程思路，未完成
+
+
+bitcoin部分：
+Project1：伪造中本聪签名
+- 已完成
+
+
+Eth部分：
+Project1：MPT研究报告
+- 已完成
+
+
+Real World Cryptanalyses部分：
+Project1：Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
+- 已完成
+
+Project2：Find a 64-byte message under some 𝒌 fulfilling that their hash value is symmetrical（选做）
+- 未完成
 
 
 
