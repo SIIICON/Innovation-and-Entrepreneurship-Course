@@ -134,61 +134,61 @@ typedef struct {
 3.项目完成情况清单
 
 - sm3部分：
-Project1：实现1精简sm3的naive生日攻击
-- 已完成
+	- Project1：实现1精简sm3的naive生日攻击
+	- 已完成
 
-Project2：实现简化sm3的rho方法
-- 已完成
+	- Project2：实现简化sm3的rho方法
+	- 已完成
 
-Project3：针对sm3、sha256等实现长度扩展攻击
-- 已完成
+	- Project3：针对sm3、sha256等实现长度扩展攻击
+	- 已完成
 
-Project4：尽最大努力优化SM3实现（软件）
-- 优化后的代码无法运行
+	- Project4：尽最大努力优化SM3实现（软件）
+	- 优化后的代码无法运行
 
-Project5：按照RFC6962实现默克尔树
-- 代码无法运行出结果
+	- Project5：按照RFC6962实现默克尔树
+	- 代码无法运行出结果
 
-Project6：尝试实施该方案
-- 代码无法运行
+	- Project6：尝试实施该方案
+	- 代码无法运行
 
 
 - sm2部分：
-Project1：Deduce ECDSA PK with ethereum
-- 已完成
+	- Project1：Deduce ECDSA PK with ethereum
+	- 已完成
 
-Project2：实现sm2和RFC6879
-- 已完成
+	- Project2：实现sm2和RFC6879
+	- 已完成
 
-Project3：用概念验证代码验证上述缺陷
-- 不理解题意，未完成
+	- Project3：用概念验证代码验证上述缺陷
+	- 不理解题意，未完成
 
-Project4：实施上述ECMH计划
-- 运行不出结果
+	- Project4：实施上述ECMH计划
+	- 运行不出结果
 
-Project5：使用SM2实现PGP方案
-- 运行不出结果
+	- Project5：使用SM2实现PGP方案
+	- 运行不出结果
 
-Project6：实现真实网络通信的sm2 2P解密
-- 没有编程思路，未完成
+	- Project6：实现真实网络通信的sm2 2P解密
+	- 没有编程思路，未完成
 
 
 - bitcoin部分：
-Project1：伪造中本聪签名
-- 已完成
+	- Project1：伪造中本聪签名
+	- 已完成
 
 
 - Eth部分：
-Project1：MPT研究报告
-- 已完成
+	- Project1：MPT研究报告
+	- 已完成
 
 
 - Real World Cryptanalyses部分：
-Project1：Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
-- 已完成
+	- Project1：Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
+	- 已完成
 
-Project2：Find a 64-byte message under some 𝒌 fulfilling that their hash value is symmetrical（选做）
-- 未完成
+	- Project2：Find a 64-byte message under some 𝒌 fulfilling that their hash value is symmetrical（选做）
+	- 未完成
 
 
 
