@@ -16,7 +16,7 @@
 - 运行截图：
 - ![图片1](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/1.png)
 
-Project2：implement Rho method attack on SM2
+- Project2：implement Rho method attack on SM2
 - 项目代码说明：
 	- 同 Project1一致：openssl 中实现了 SM3，但考虑到 openssl 整体体量较大，且需要通过统一接口进行调用，无法直接调用 SM3 模块，这里将 SM3 的模块从 openssl 中抽离出来，作为可用的单独模块进行调用；
 	- 使用了以下结构体来装载一个摘要实例；
@@ -35,7 +35,7 @@ typedef struct {
 - 运行截图：
 - ![图片2](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/2.png)
 
-Project3：implement Length_Extension_Attack on SM2
+- Project3：implement Length_Extension_Attack on SM2
 - 项目代码说明：
 	- 同 Project1一致：openssl 中实现了 SM3，但考虑到 openssl 整体体量较大，且需要通过统一接口进行调用，无法直接调用 SM3 模块，这里将 SM3 的模块从 openssl 中抽离出来，作为可用的单独模块进行调用；
 	- 代码分为三个步骤（此处我们设原始消息为“secretdata”，设要拼接的字符串为“append”）：
@@ -51,18 +51,18 @@ Project3：implement Length_Extension_Attack on SM2
 - 运行截图：
 - ![图片3](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/3.png)
 
-Project4：尽最大努力优化SM3实现（软件）
+- Project4：尽最大努力优化SM3实现（软件）
 - 优化后的代码无法运行。
 
-Project5：按照RFC6962实现默克尔树
+- Project5：按照RFC6962实现默克尔树
 - 代码无法运行出结果，未完成。
 
-Project6：尝试实施该方案
+- Project6：尝试实施该方案
 - 代码无法运行，未完成。
 
 
-SM2部分：
-Project1：Deduce ECDSA PK with ethereum
+- SM2部分：
+- Project1：Deduce ECDSA PK with ethereum
 - 项目代码说明：
 	- Go 语言可以快速抓取 github/ethereum/ethereum-go/crypto 上的密码学组件，然后模拟推断公钥的过程；
 	- 利用 crypto 模块生成私钥 privateKey，然后利用 privateKey 生成 PublicKey；
@@ -72,7 +72,7 @@ Project1：Deduce ECDSA PK with ethereum
 - 运行截图：
 - ![图片4](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/4.png)
 
-Project:2：implement SM2
+- Project:2：implement SM2
 - 项目代码说明：
 	- 一种方式也是将 openssl 中SM2椭圆曲线分离出来，避免了总是需要调用统一接口来使用 SM2 的缺点；
 	- 另一种方式是基于 Miracl 大整数库构造一套SM2椭圆曲线加密模块；
@@ -82,22 +82,22 @@ Project:2：implement SM2
 - 运行截图：
 - ![图片5](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/5.jpg)
 
-Project3：用概念验证代码验证上述缺陷
+- Project3：用概念验证代码验证上述缺陷
 - 不理解题意，未完成。
 
-Project4：实施上述ECMH计划
+- Project4：实施上述ECMH计划
 - 运行不出结果，未完成。
 
-Project5：使用SM2实现PGP方案
+- Project5：使用SM2实现PGP方案
 - 运行不出结果，未完成。
 
 
-Project6：实现真实网络通信的sm2 2P解密
+- Project6：实现真实网络通信的sm2 2P解密
 - 没有编程思路，未完成。
 
 
-Bitcoin部分：
-Project1：伪造中本聪签名
+- Bitcoin部分：
+- Project1：伪造中本聪签名
 - 项目代码说明：
 	 -区块链采用椭圆曲线数字签名算法（ECDSA），私钥可以表述为给定的两个签名（r，s）和（r，s'），采用相同的随机整数k用于不同的已知消息m和m'，攻击者可以通过计算z和z'，再根据s-s'=(z-z')/k，解出k，进而计算私钥。
 	 -签名的验证步骤可以概括为：
@@ -113,12 +113,12 @@ Project1：伪造中本聪签名
 - ![图片6](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/6.png)
 
 
-ETH部分：
-Project1：MPT研究报告（见"research report on MPT"）
+- ETH部分：
+- Project1：MPT研究报告（见"research report on MPT"）
 
 
-Real World Cryptanalyses部分：
-Project1：Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
+- Real World Cryptanalyses部分：
+- Project1：Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
 - 项目代码说明：
 	-根据题目要求，在给定hash value和message的情况下，通过碰撞反解key。由于meow hash在设计时三个模块的操作都是可逆的，因此可以通过h和m的信息反过来求k。针对算法的可逆性、对称性、通过对称性碰撞均可对其进行攻击，或进行差分分析。
 	-恢复密钥的关键在于，只有当对输入到AES中的值的猜测是正确的，消失的特征才会成立，可以通过随机数辅助找到这样的消息对。
@@ -127,12 +127,11 @@ Project1：Find a key with hash value “sdu_cst_20220610” under a message com
 - 运行截图：
 - ![图片7](https://raw.githubusercontent.com/SIIICON/Innovation-and-Entrepreneurship-Course/main/%E6%88%AA%E5%9B%BE/7.jpg)
 
-Project2：Find a 64-byte message under some 𝒌 fulfilling that their hash value is symmetrical（选做）
+- Project2：Find a 64-byte message under some 𝒌 fulfilling that their hash value is symmetrical（选做）
 - 未完成。
 
 
 3.项目完成情况清单
-
 
 sm3部分：
 Project1：实现1精简sm3的naive生日攻击
